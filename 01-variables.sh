@@ -2,19 +2,19 @@
 #This script displays various information to the screen
 
 # Display ‘Hello’
-echo ‘Hello’
+echo "Hello"
 
 #Single quotes will display excalty what we provide
 
 #Assign a value to a variable
-WORD=’script’
+WORD="script"
 
 #Display that value using the variable.
 
 echo “$WORD”
 
 #Demonstrate that single quotes cause variabled to NOT get expanded.
-echo ‘$WORD’
+echo "$WORD"
 
 #combine the variable with hard-coded text.
 echo “This is a shell $WORD”
@@ -30,13 +30,13 @@ echo “${WORD}ing is fun!”
 echo “#WORDing is fun!”
 
 #Create a new variable
-ENDING=’ed’
+ENDING="ed"
 
 #Combine the two variables
 echo “This is ${WORD} ${ENDING}.”
 
 #Change the value stored in the ENDING variable. (Reassignment)
-ENDING=’ing’
+ENDING="ing"
 echo “${WORD}${ENDING} is fun!”
 
 #Reassign value to ENDING.
