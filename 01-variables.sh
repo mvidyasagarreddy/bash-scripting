@@ -14,7 +14,7 @@ WORD="script"
 echo “$WORD”
 
 #Demonstrate that single quotes cause variabled to NOT get expanded.
-echo "$WORD"
+echo '$WORD'
 
 #combine the variable with hard-coded text.
 echo “This is a shell $WORD”
