@@ -14,11 +14,10 @@ WORD="script"
 echo “$WORD”
 
 #Demonstrate that single quotes cause variabled to NOT get expanded.
-echo '$WORD'
+echo "$WORD"
 
 #combine the variable with hard-coded text.
 echo “This is a shell $WORD”
-echo 'This is a shell $WORD'
 
 #Display the contents of the variable using an alternative syntax.
 echo “This is a shell ${WORD}”
@@ -41,5 +40,5 @@ ENDING="ing"
 echo “${WORD}${ENDING} is fun!”
 
 #Reassign value to ENDING.
-ENDING=’s’
-echo 'You are going to write ${WORD}${ENDING}'
+ENDING="s"
+echo "You are going to write ${WORD}${ENDING}"
